@@ -1,0 +1,5 @@
+__pycache__
+myenv
+log/*
+sh_result/*
+output.log
