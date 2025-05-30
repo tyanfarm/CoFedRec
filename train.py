@@ -158,7 +158,7 @@ str = current_time + '-' + 'latent_dim: ' + str(config['latent_dim']) + '-' + 'l
       + '-' + 'negatives: ' + str(config['num_negative']) + '-' + 'lr_eta: ' + str(config['lr_eta']) + '-' + \
       'batch_size: ' + str(config['batch_size']) + '-' + 'hr: ' + str(hit_ratio_list[final_test_round]) + '-' \
       + 'ndcg: ' + str(ndcg_list[final_test_round]) + '-' + 'best_round: ' + str(final_test_round) + '-' + \
-      'optimizer: ' + config['optimizer'] + '-' + 'l2_regularization: ' + str(config['l2_regularization']) + ' - ' + 'method: ' + config['alias']
+      'optimizer: ' + config['optimizer'] + '-' + 'l2_regularization: ' + str(config['l2_regularization']) + ' - ' + 'reg: ' + config['reg'] + ' - ' + 'cl_t: ' + config['cl_t'] + ' - ' + 'method: ' + config['alias']
 file_name = "sh_result/"+config['dataset']+".txt"
 with open(file_name, 'a') as file:
     file.write(str + '\n')
